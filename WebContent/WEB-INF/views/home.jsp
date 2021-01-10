@@ -6,17 +6,24 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Project Home</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
 </head>
 <body>
 	<div align="center">
-		<h2>LISTA DE TIPO DE PROCESSO</h2>
+		<nav class="navbar navbar-dark bg-dark">
+		<h2 class="navbar-brand">LISTA DE TIPO DE PROCESSO</h2>
 
 		<h3>
-			<a href="./viewProcess">VER PROCESSOS</a>
+			<a class="badge badge-primary" href="./viewProcess">VER PROCESSOS</a>		
 		</h3>
-		<table border="1" cellppading="5">
+		</nav>
+		<table cellppading="5" class="table table-bordered">
 			<th>Id</th>
 			<th>Tipo de Processo</th>
+			<th>Ação</th>
 			<c:forEach var="project" items="${listProject}" varStatus="status">
 				<tr>
 					<td>${project.id}</td>
@@ -28,7 +35,7 @@
 			</c:forEach>
 		</table>
 		<h3>
-			<a href="./newProject">NOVO</a>
+			<a class="badge badge-info" href="./newProject">NOVO</a>
 		</h3>
 	</div>
 </body>

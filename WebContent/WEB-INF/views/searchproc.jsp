@@ -8,23 +8,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Search Processo</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
 </head>
 <body>
-<p><a href="./">Home</a></p>
-<p><a href="./viewProcess">Voltar</a></p>
     <div align="center">
-        <h2>SEARCH</h2>	
-        <form:form action="resultProcess" method="get" modelAttribute="process">
+    	<nav class="navbar navbar-dark bg-dark">	
+		<h5><a class="badge badge-dark" href="./viewProcess">Voltar</a></h5>
+        <h1 class="navbar-brand">PESQUISAR</h1>
+        <h5><a class="badge badge-dark" href="./">Home</a></h5>	
+        </nav>
+        <br>
+        <form:form class="form-inline my-2 my-lg-0" action="resultProcess" method="get" modelAttribute="process" >
         <table cellpadding="5">
             <!--<form:hidden path="numero"/>-->
             		<!--  <input type="submit"/>-->
             <tr>
                 <td>Número do processo:</td>
-                <td><form:input path="numero" /></td>
-            </tr>
-				<tr>
-                <td colspan="2" align="center"><input type="submit" value="Search"></td>
-            </tr>
+                <td><form:input class="form-control mr-sm-2" path="numero" /></td>
+                <td colspan="2" align="center"><input class="btn btn-outline-primary my-2 my-sm-0" type="submit" value="Search"></td>
         </table>
         </form:form>
     </div>

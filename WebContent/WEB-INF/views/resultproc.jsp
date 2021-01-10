@@ -8,17 +8,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Resultado</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
 </head>
 <body>
-	<p>
-		<a href="./">Home</a>
-	</p>
-	<p>
-		<a href="./searchProcess">Voltar</a>
-	</p>
 	<div align="center">
-		<h1>Processo</h1>
-
+	<nav class="navbar navbar-dark bg-dark">
+	<h5>
+		<a class="badge badge-dark" href="./searchProcess">Voltar</a>
+	</h5>
+		<h1 class="navbar-brand" >PROCESSO</h1>
+	<h5>
+		<a class="badge badge-dark" href="./">Home</a>
+	</h5>
+	</nav>
+	<br>
 		<form:form action="saveProcess" method="get" modelAttribute="process">
 			<table cellpadding="5">
 				<form:hidden path="numero" />

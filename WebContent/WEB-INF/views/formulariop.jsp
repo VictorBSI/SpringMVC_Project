@@ -8,11 +8,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Processo</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
 </head>
 <body>
 	<div align="center">
-		<h2>PROCESSOS</h2>
-
+	<nav class="navbar navbar-dark bg-dark">
+		<h2 class="navbar-brand">PROCESSOS</h2>
+	</nav>
+	<br>
 		<form:form action="saveProcess" method="post" modelAttribute="process">
 			<table cellpadding="5">
 				<form:hidden path="id_p" />
@@ -38,7 +44,7 @@
 					<td><form:input path="objetivo" /></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="center"><input type="submit"
+					<td colspan="2" align="center"><input class="btn btn-primary" type="submit"
 						value="Save"></td>
 				</tr>
 			</table>
