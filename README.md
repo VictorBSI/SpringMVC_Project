@@ -7,7 +7,7 @@
 - JavaEE;
 - EclipseIDE;
 - Servidor de aplicação TOMCAT v8.0;
-- Banco de dado Oracle;
+- Banco de dado Oracle MySQL 8.0.22;
 
 ## Objetivo:
 
